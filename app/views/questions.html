@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Introductory Questions</h2>
+  
+  <div ng-repeat="question in questions">
+    <div class="question-item"> 
+      <div class="question-text">{{ question.text }}</div>
+      <button ng-click="startRecording({{ question.id }})" class="btn btn-default record-audio">Start Recording</button>
+      <button ng-click="endRecording()" class="btn btn-default record-audio">Stop Recording</button>
+    </div>
+  </p>
+</div>
